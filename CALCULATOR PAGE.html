@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        window.confirm("Log in successfuly");
+        function totalValues(){
+            var firstnum;
+            var secondnum;
+            let sum,product,difference,quotient,modulos;
+            firstnum=Number(document.basical.firstnum.value);
+            secondnum=Number(document.basical.secondnum.value);
+            sum = firstnum + secondnum;
+            product = firstnum * secondnum;
+            difference= firstnum - secondnum;
+            quotient= firstnum / secondnum;
+            modulos= firstnum % secondnum;
+            document.basical.result.value=sum;
+            document.basical.result1.value=product;
+            document.basical.result2.value=difference;
+            document.basical.result3.value=quotient;
+            document.basical.result4.value=modulos;
+        }
+    </script>
+</head>
+<body>
+    <form name="basical">
+    <center>
+    <h1>THIS IS CALCULATOR PAGE</h1>
+    <div>
+    <label for="firstnum">ENTER FIRST NUMBER:</label>
+    <input type="text" required id="firstnum" placeholder="0"/>
+    <span></span>
+    <br>
+    <label for="secondnum">ENTER SECOND NUMBER:</label>
+    <input type="text" required id="secondnum" placeholder="0"/>
+    <br>
+    <br>
+    <br>
+    <label for="result">THE SUM:</label>
+    <input type="text"  id="result"/>
+    <br>
+    <label for="result1">THE PRODUCT:</label>
+    <input type="text"  id="result1" required/>
+    <br>
+    <label for="result2">THE DIFFERENCE:</label>
+    <input type="text"  id="result2" required/>
+    <br>
+    <label for="result3">THE QUOTIENT:</label>
+    <input type="text"  id="result3" required/>
+    <br>
+    <label for="result4">THE MODULOS:</label>
+    <input type="text"  id="result4" required/>
+    <br>
+    <button type="button" Onclick="totalValues()" id="btn">CALCULATE</button>
+    </div>
+
+    </center>
+</form>
+</body>
+</html>
+
+<style>
+    *{
+        background-color: black;
+    }
+
+    h1{
+        margin-top: 5rem;
+        color: gold;
+    }
+
+    div{
+        font-size: 1.5rem;
+        color: white;
+        font-weight: bolder;
+    }
+
+    #firstnum{
+        color: white;
+        border-radius: .5rem;
+        border: .2rem solid wheat;
+        margin-top: 2rem;
+        padding:.3rem;
+        width: 12rem;
+    }
+
+    #secondnum{
+        color: white;
+        border-radius: .5rem;
+        border: .2rem solid wheat;
+        margin-top: 2rem;
+        padding:.3rem;
+        width: 12rem;
+    }
+
+    #result{
+        color: white;
+        border-radius: .5rem;
+        border: .2rem solid wheat;
+        margin-top: 2rem;
+        padding:.3rem;
+        width: 12rem;
+        display: flex;
+    }
+
+    
+    #result1{
+        color: white;
+        border-radius: .5rem;
+        border: .2rem solid wheat;
+        margin-top: 2rem;
+        padding:.3rem;
+        width: 12rem;
+        display: flex;
+    }
+
+    #result2{
+        color: white;
+        border-radius: .5rem;
+        border: .2rem solid wheat;
+        margin-top: 2rem;
+        padding:.3rem;
+        width: 12rem;
+        display: flex;
+    }
+
+    #result3{
+        color: white;
+        border-radius: .5rem;
+        border: .2rem solid wheat;
+        margin-top: 2rem;
+        padding:.3rem;
+        width: 12rem;
+        display: flex;
+    }
+
+    #result4{
+        color: white;
+        border-radius: .5rem;
+        border: .2rem solid wheat;
+        margin-top: 2rem;
+        padding:.3rem;
+        width: 12rem;
+        display: flex;
+    }
+
+
+    button{
+        color: white;
+        border-radius: .5rem;
+        border: .5rem solid rgba(179, 245, 185, 0.78);
+        margin-top: 2rem;
+        padding:.3rem;
+        width: 12rem;
+        background-color: burlywood;
+    }
+</style>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+	<title>MY LOG IN FORM</title>
+	<style>
+		form{
+			border: 1px solid ;
+			box-shadow: cyan 1rem 1rem 1rem .8rem;
+			width: 600px;
+			margin: 200px auto;
+		}
+		div{
+			width: 100%;
+			margin: 15px auto;
+		}
+		label{
+			display: block;
+			padding: 20px;
+			font-size: 25px;
+		}
+		input{
+			width: 90%;
+			padding: 10px;
+			border: 1px solid #797979;
+			margin-left: 20px;
+			font-size: 20px;
+			border-radius: 3px;
+		}
+		button{
+			margin: 20px;
+		    padding: 10px;
+		    width: 100px;
+		    border: none;
+		    outline: none;
+		    cursor: pointer;
+		    border-radius: 5px;
+		    background: linear-gradient(90deg, royalblue, lightgreen);
+		    font-size: 20px;
+		    font-weight: bold;
+		    color: whitesmoke;
+		}
+		span{
+			display: block;
+		    margin-left: 20px;
+		    color: red;
+		    font-style: italic;
+		}
+
+		h1{
+			font-weight: bold;
+			font-size: 3rem;
+		}
+</style>
+<script>
+	
+function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "admin" && password == "admin"){
+	window.confirm("Log in successfuly...");
+ return true;
+}
+else{
+alert("Incorect username and password please try again...");
+return false;
+}
+}
+
+</script>				
+		
+</head>
+<body>
+		<center><h1>THIS IS LOG IN PAGE</h1></center>
+<form name=myForm" onsubmit="return validate()" method="post" action="CALCULATOR PAGE.html">
+		<div>
+			<label>Username</label>
+			<input type="text" id="username" id="Username" required placeholder="Please type your username"/>
+			<span></span>
+		</div>
+		<div>
+			<label for="password">Password</label>
+			<input type="password" id="password" id="Password" required placeholder="Please type your password"/>
+			<span></span>
+		</div>
+		<center> <button Onclick="validate()" id="btn">Log-in</button> </center>
+
+
+	</form>
+	
+</body>
+</html>
