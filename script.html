@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREETINGS PROJ</title>
+</head>
+<body>
+    <div class="hero">
+    <center>
+    <h1>Hello this is greeting site</h1>
+   <p id="greet">HI PO</p>
+   <button type="button" onclick="myFunction()">CLICK ME!</button>
+    </center>
+    </div>
+</body>
+</html>
+
+<script>
+    function myFunction(){
+        document.getElementById("greet").innerHTML="WHAT IF TAYO TALAGA PARA SA ISA'T ISA";
+
+    }
+</script> 
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: monospace;
+        background-color: BLACK;
+    }
+
+    h1{
+        color: red;
+        font-size: 50px;
+        font-weight: bolder;
+    }
+
+    #greet{
+        color: WHEAT;
+        font-size: 50px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .hero{
+        margin-top: 250px;
+    }
+
+    button{
+        margin-top: 20px;
+        color: white;
+        font-size: 20px;
+        border: 2px solid red;
+        border-radius: 5px 10px 0px 10px;
+        padding: 10px;
+    }
+
+    button:hover{
+        color:red;
+        background-color: yellow;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+</style>
